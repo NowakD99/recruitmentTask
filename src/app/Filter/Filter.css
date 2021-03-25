@@ -1,0 +1,38 @@
+.filters {
+    display: flex;
+    align-items: center;
+    margin: 24px 0 32px;
+}
+.filters input {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #E0E2EA;
+    -webkit-appearance: none;
+    border-radius: 3px;
+}
+.filters input[type=checkbox]:checked {
+    background: #f6f6f6;
+    background: -moz-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -webkit-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -ms-radial-gradient(#f6f6f6, #dfdfdf);
+    background: -o-radial-gradient(#f6f6f6, #dfdfdf);
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+}
+
+.filters label {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 10px;
+    margin-right: 32px;
+}
+
+@media only screen and (min-width: 1201px) {
+    .filters {
+        margin: 0 0 0 32px;
+    }
+    .filters label {
+        margin: 0;
+    }
+}

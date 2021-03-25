@@ -1,0 +1,32 @@
+.paginationBox {
+    background-color: #f8f8fa;
+    padding: 40px 0 60px;
+}
+
+.pagination {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.pagination button {
+    display: block;
+    border: none;
+    background-color: #f8f8fa;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.pagination .active {
+    color: #4460F7;
+}
+.pagination .disabled {
+    color: #9194a5;
+}
+
+.pagination .first, .pagination .last {
+    margin: 0 15px;
+}
