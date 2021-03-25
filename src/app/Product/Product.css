@@ -130,6 +130,11 @@
     right: 25px;
 }
 
+button, input[type='checkbox'], label {
+    cursor: pointer;
+}
+
+
 @media only screen and (min-width: 768px) {
     .product {
         width: 327px;

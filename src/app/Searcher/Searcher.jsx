@@ -9,9 +9,7 @@ export const Searcher = ({name, parameter, currentAPILink ,setCurrentAPILink, ge
 
   function onChange() {
     if(isComponentMounted) {
-       let API = currentAPILink;
-       searcherValue ? API[parameter] = `&${parameter}=${searcherValue}` : API[parameter] = "";
-
+       let API = {...currentAPILink, page: "&page=1", [parameter]: searcherValue ? `&${parameter}=${searcherValue}` : ""}
        setCurrentAPILink(API)
        getProducts(convertObjToLink(API))
    }
